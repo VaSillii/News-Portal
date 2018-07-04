@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{{$title or ''}}</title>
-	<link rel="stylesheet" type="text/css" href="base_style.css">
+	<title>{{$title or 'News Portal'}}</title>
 	@section('head')
 	@show
 </head>
