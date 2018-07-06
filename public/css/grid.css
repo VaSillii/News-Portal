@@ -6,7 +6,7 @@
 body {
     font-family: "Awesome","Open Sans", Arial, sans-serif;
 /*    font-size: 12px;*/
-    background: url("../img/background-site1.jpg") no-repeat center fixed;
+    background: url("/img/background-site.jpg") no-repeat center fixed;
     background-size: cover;
 /*    background-position: center;*/
 }
