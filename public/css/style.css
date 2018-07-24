@@ -12,6 +12,16 @@ header {
     height: 150px;
 }
 
+.top {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+
+.head-nav>ul>li>a {
+    text-decoration: none;
+    list-style: none;
+}
+
 .topmenu>ul>li, .head-nav>ul>li {
     display: inline-block;
 }
@@ -22,10 +32,6 @@ header {
     color: #000;
 }
 
-.topmenu>ul>li {
-    padding: 5px;    
-}
-
 .main-header {
     text-align: right;
     margin-top: 20px;
@@ -34,20 +40,20 @@ header {
 
 header>nav {
     background: #2f2f2f;
-    height: 40px;
-/*    position: fixed;*/
 }
+
 .head-nav {
     background: #1c1c1c;
     height: 40px;
 }
 
-#top_nav {
+#top-nav {
     position: fixed;
-    top: 120px;
+    top: 100px;
 }
+
 .head-nav>ul>li {
-    padding: 9px 25px;
+    padding: 8px 25px;
     border-right-color: #4f4f4f;
     border-right-style: solid;
     border-right-width: 2px;
@@ -59,17 +65,32 @@ header>nav {
     text-transform: uppercase;
 }
 
+.head-nav>ul>li>a:first-child {
+    padding-right: 0;
+}
 .head-nav>ul>li:hover {
     background: #4f4f4f;
     cursor: pointer;
 } 
 
 .logo {
-    font-size: 90px;
+    font-size: 80px;
+    /*padding-left: 18px;*/
 }
 
-.head-nav>ul>li>a, .topmenu>ul>li>a {
+
+.logo>a {
     text-decoration: none;
+    color: #000;
+}
+
+.logo>a:hover {
+    text-decoration: none; 
+    color: #000;
+}
+.head-nav>ul>li>a, .logo>a {
+    text-decoration: none;
+    list-style: none;
 }
 
 .seach {
@@ -79,16 +100,13 @@ header>nav {
     width: 68%;
     height: 25px;
 }
-.upper-layer {
-    background: rgba(0, 0, 0, 0.4);
-}
-/*end head panel */
+/*end head panel*/
 
 
 /*Start content*/
 .content {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /*padding-top: 40px;
+    padding-bottom: 40px;*/
     height: 100vh;
     display: grid;
     grid-template-columns: 80% 20%;
@@ -99,12 +117,12 @@ header>nav {
     height: 100px;
     margin-right: 10px;
 }
+/*End Content*/
 
 
 
 
-
-
+/*Start sidebar*/
 .sidebar {
     height: 50px;
     text-align: left;
@@ -123,10 +141,13 @@ header>nav {
 .sidebar>span {
     font-size: 18px;
 }
-/*End Content*/
+/*End sidebar*/
 
 
-/*Footer*/
+
+
+
+/*Start footer*/
 footer {
     position: absolute;
     bottom: 0;
@@ -146,4 +167,4 @@ footer>div>span {
     font-size: 15px;
      
 }
-/*End Footer*/
+/*End footer*/

@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 <head>
-	<meta charset="UTF-8">
-	<title>{{$title or 'News Portal'}}</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Laravel</title>
 
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="/css/grid.css">
+	
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 
 	@section('head')
-	@show
+	@show()
 </head>
 <body>
 	<div class="wrapper">
 		@section('header')
-		@show
-	<div class="content container upper-layer">
-		@section('content')
 		@show()
 
-		@section('sidebar')
-		@show()
-	</div>
-		@section('auth')
-		@show()
+		<div class="content container">
+			@section('content')
+			@show()
 
-		@section('reg')
-		@show()
+			@section('sidebar')
+			@show()	
+		</div>
+		
+		
 
 		@section('footer')
 		@show()
-
 	</div>
 	
 	@section('script')
+		
 
-	@section('script')
 	@show()
 </body>
 </html>
